@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "pontos-turisticos"
+version = "0.1.0"
+description = ""
+authors = ["Fabio C. Barrioneuvo da Luz <bnafta@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+django = "2.0.5"
+djangorestframework = "3.8.2"
+ipython = "6.4.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.5"
+django-debug-toolbar = "1.9.1"
