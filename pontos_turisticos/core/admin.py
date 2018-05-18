@@ -1,3 +1,12 @@
 from django.contrib import admin
 
-# Register your models here.
+from . import models
+
+
+@admin.register(models.PontoTuristico)
+class PontoTuristicoAdmin(admin.ModelAdmin):
+    list_display = (
+        'nome',
+        'descricao',
+        'aprovado'
+    )
