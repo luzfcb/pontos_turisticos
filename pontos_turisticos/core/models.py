@@ -6,6 +6,7 @@ class PontoTuristico(models.Model):
     descricao = models.TextField()
     aprovado = models.BooleanField(default=False)
     atracoes = models.ManyToManyField('atracoes.Atracao')
+    comentarios = models.ManyToManyField('comentarios.Comentario')
 
     def __str__(self):
         return self.nome

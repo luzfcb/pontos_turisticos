@@ -3,11 +3,11 @@ from django.contrib import admin
 from . import models
 
 
-@admin.register(models.Comentario)
-class ComentarioAdmin(admin.ModelAdmin):
+@admin.register(models.Avaliacao)
+class AvaliacaoAdmin(admin.ModelAdmin):
     list_display = (
-        'usuario',
+        'user',
         'comentario',
+        'nota',
         'data',
-        'aprovado'
     )
